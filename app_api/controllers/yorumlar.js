@@ -31,7 +31,7 @@ var ortalamaPuanGuncelle = function(mekanid) {
   .select('puan yorumlar')
   .exec(
      function(hata, mekan){
-       if (cevap.statusCode==200){
+       if (!hata){
          sonPuanHesapla(mekan);
        }
       });
